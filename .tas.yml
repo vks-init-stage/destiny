@@ -1,13 +1,13 @@
 ---
-framework: "jest"
+framework: jest                  # Mention the testing framework mocha or jest
 postMerge:
-  pattern:
-    - "./tests/*.test.ts"
+    pattern:
+    - "./tests/*.test.ts"            # Glob pattern to path where tests that should run post-merge are written
 preMerge:
-  pattern:
-    - "./tests/*.test.ts"
+    pattern:
+    - "./tests/*.test.ts"              # Glob pattern to path where tests that should run pre-merge are written
 preRun:
-  - npm install
+    - npm install                   # Mention pre-run steps here
 postRun:
-  - node --version
+    - node --version                # Mention post-run steps here
 version: 2.0
