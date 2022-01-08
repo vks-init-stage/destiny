@@ -8,7 +8,7 @@ preMerge:
 preRun:
      command:
         - yarn install
-        - yarn run prepare
+        - yarn run build
 postRun:
      command:
         - yarn --version
